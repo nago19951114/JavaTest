@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/com/aiguona/imooc/ChildCourse.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/aiguona/imooc/Generic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/aiguona/imooc/ListTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/aiguona/imooc/course.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/aiguona/imooc/scoreSet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/aiguona/imooc/student.java" charset="GBK" />
+  </component>
+</project>
