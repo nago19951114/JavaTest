@@ -119,9 +119,35 @@ public class goddessDao {
 			g.setUpdate_user(re.getString("Update_user"));
 			g.setIsdel(re.getInt("Isdel"));
 		}
-		return g;
-
-		
+		return g;	
+	}
+	
+	public  List<Goddness> look() throws SQLException
+	{			
+		Goddness g= null;
+		Connection conn=DBunit.getConnection();//拿到数据库的连接
+		String sql=" "+" select * from  imooc_goddess ";
+		PreparedStatement ptmt=conn.prepareStatement(sql);
+		List<Goddness> gs = new ArrayList<Goddness>();
+		ResultSet re= ptmt.executeQuery();
+		while(re.next())
+		{
+			g= new Goddness();
+			g.setUesr_name(re.getString("user_name"));
+			g.setAge(re.getInt("age"));
+			g.setId(re.getInt("id"));
+			g.setSex(re.getInt("sex"));
+			g.setBirthdat(re.getDate("birthday"));
+			g.setEmail(re.getString("email"));
+			g.setMobile(re.getString("mobile"));
+			g.setCreate_date(re.getDate("create_date"));
+			g.setCreate_user(re.getString("Create_user"));
+			g.setUpdata_data(re.getDate("update_date"));
+			g.setUpdate_user(re.getString("Update_user"));
+			g.setIsdel(re.getInt("Isdel"));
+			gs.add(g);
+		}
+		return gs;	
 	}
 
 }
